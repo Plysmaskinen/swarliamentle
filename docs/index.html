@@ -17,8 +17,30 @@
 	</style>
 </head>
 <body>
-	<h1>"It's is the the Game" - Wise man</h1>
+	<h1>"It's is the The Game" - Wise man</h1>
 	<button id="API">Call API</button>
+	<button id="Show">Show Data</button>
+
+	<div id="people"></div>
+
+	<h2 id="correct" aria-live="polite" hidden="true" color="green">Correct!</h2>
+	<h2 id="incorrect" aria-live="polite" hidden="true" color="red">Incorrect.</h2>
+
+	<button id="next">Next</button>
+
+	<div id="parties">
+		<button class="party-button" data-party="S">Socialdemokraterna</button>
+		<button class="party-button" data-party="SD">Sverigedemokraterna</button>
+		<button class="party-button" data-party="M">Moderaterna</button>
+		<button class="party-button" data-party="C">Centerpartiet</button>
+		<button class="party-button" data-party="V">Vänsterpartiet</button>
+		<button class="party-button" data-party="KD">Kristdemokraterna</button>
+		<button class="party-button" data-party="MP">Miljöpartiet</button>
+		<button class="party-button" data-party="L">Liberalerna</button>
+	</div>
+	<p id="curr-party" aria-live="polite">Guess: -</p>
+	<p id="points" aria-live="polite">Points: 0</p>
+
 	<script src="script.js"></script>
 </body>
 </html>
